@@ -4,6 +4,8 @@ Arduino kód pro ESP32, který skenuje specifické BLE MAC adresy a stáhne data
 
 Pro správné fungování čidla je nutné použit custom firmware : https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html
 
+(pro potvrzení lze také použít https://pvvx.github.io/ATC_MiThermometer/Advertising.html )
+
 Jako protokol advertising dat zvolit "ATC1441" bez ADFLAGS a Encryption
 
 
