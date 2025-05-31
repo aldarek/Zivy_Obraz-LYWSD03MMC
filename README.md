@@ -20,4 +20,20 @@ Tato data se v kódu převedou a vypíšou se v seriové komunikaci.
 Při úspěšném "odchycení" a "dekódování" se data pošlou na server Zivy Obraz jako proměnné (Hodnoty)
 
 
+V kódu musíte upravit následující:
+const char* ssid = "SSID_SITE s internetem";
+const char* password = "HESLO";
+
+údaje o vaší WIFI
+
+
+if (advertisedDevice.getAddress().toString() == "a4:c1:38:xx:xx:xx") { //kontrola přednastavené MAC čidla
+Nastavení MAC adresy vašeho čidla
+
+
+
+"?import_key=VAS_IMPORT_KEY" +  // importkey z url
+Import key ze serveru živý obraz
+
+
 
