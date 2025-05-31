@@ -21,7 +21,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
     void onResult(BLEAdvertisedDevice advertisedDevice) {
         
 
-         if (advertisedDevice.getAddress().toString() == "a4:c1:38:30:fa:55") { //kontrola přednastavené MAC čidla
+         if (advertisedDevice.getAddress().toString() == "a4:c1:38:xx:xx:xx") { //kontrola přednastavené MAC čidla
             Serial.println("✅ Nalezeno moje čidlo!");
 
             String serviceData = advertisedDevice.getServiceData();
