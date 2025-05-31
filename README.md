@@ -1,8 +1,8 @@
 # Zivy_Obraz-LYWSD03MMC 
 # Arduino kód pro ESP32, který skenuje specifické BLE MAC adresy a stáhne data z čidla LYWSD03MMC a následně odešle jako proměnné na server Živý obraz 
 # Potřebný HW: 
-ESP32 - dev module 
-Xiaomi LYWSD03MMC čidlo 
+### ESP32 - dev module  
+### Xiaomi LYWSD03MMC čidlo 
 
 # Návod
 
