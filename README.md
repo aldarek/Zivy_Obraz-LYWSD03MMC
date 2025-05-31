@@ -7,5 +7,15 @@ Pro správné fungování čidla je nutné použit custom firmware : https://pvv
 Jako protokol advertising dat zvolit "ATC1441" bez ADFLAGS a Encryption
 
 
-Pomocí aplikace (např. nRF Connect) lze zjistit MAC adresu čidla a zkontrolovat správný formát advertising dat.
+Pomocí aplikace (např. nRF Connect) lze zjistit MAC (MAC adresy čidel začínají na A4:C1:38:XX:XX:XX) adresu čidla a zkontrolovat správný formát advertising dat.
+Service data by měla být "Enviromental Sensing" <181A>
+
+Advertising data musí mít formát: A4C1 38XX XXXX 00EA 355A 0B6E 4C
+Kde prvních 6 bajtů je MAC adresa čidla, Bajt 7 je teplota, Bajt 8 je vlhkost, Bajt 9 je baterie v procentech a Bajt 10-11 je napětí baterie v mV
+
+
+Tato data se v kódu převedou a vypíšou se v seriové komunikaci.
+Při úspěšném "odchycení" a "dekódování" se data pošlou na server Zivy Obraz jako proměnné (Hodnoty)
+
+
 
