@@ -25,18 +25,18 @@ Při úspěšném "odchycení" a "dekódování" se data pošlou na server Zivy 
 
 
 V kódu musíte upravit následující:  
-```
+```C++
 const char* ssid = "SSID_SITE s internetem";  
 const char* password = "HESLO";
 ``` 
 **údaje o vaší WIFI**
 
-```
+```C++
 if (advertisedDevice.getAddress().toString() == "a4:c1:38:xx:xx:xx") { //kontrola přednastavené MAC čidla
 ```
 **Nastavení MAC adresy vašeho čidla**
 
-```
+```C++
 "?import_key=VAS_IMPORT_KEY" +  // importkey z url
 ``` 
 **Import key ze serveru živý obraz**
