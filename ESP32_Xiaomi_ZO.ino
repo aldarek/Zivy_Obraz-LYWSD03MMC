@@ -35,7 +35,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
             if (serviceData.length() >= 13) {
                 const uint8_t* data = (const uint8_t*)serviceData.c_str();
 
-                float temp = (int16_t)(data[7]) / 10.0;
+                float temp = ((data[6] << 8) | data[7]) / 10.0;
                 uint8_t hum = data[8];
                 uint16_t vbat = (data[10] << 8) | data[11];
                 uint8_t batt = data[9]; // není vždy přesné
